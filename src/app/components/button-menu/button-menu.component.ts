@@ -16,6 +16,8 @@ export class ButtonMenuComponent implements OnInit {
   /**
    * TODO: provide an EventEmitter intended for decrementing the parent component's count value.
    */
+  @Output()
+  decrementEvent : EventEmitter<any> = new EventEmitter<any>();
 
   /**
    * This method will fire when a button is clicked, and will emit an incrementEvent to the parent component.
@@ -28,7 +30,6 @@ export class ButtonMenuComponent implements OnInit {
    * TODO: emit a decrementEvent to the parent component once the decrementEvent EventEmitter has been set up.
    */
   decrement() {
-
   }
 
   constructor() { }
